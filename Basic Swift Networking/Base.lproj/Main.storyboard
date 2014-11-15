@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oq4-PQ-Ffe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Plumbing Supply Categories Table View Controller-->
+        <scene sceneID="7vN-iP-S7h">
+            <objects>
+                <tableViewController id="F1J-Yr-jRz" customClass="PlumbingSupplyCategoriesTableViewController" customModule="Basic_Swift_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jj0-IN-X6F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="jbG-fg-zKL">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="DCo-wh-opU" style="IBUITableViewCellStyleDefault" id="sww-Yl-F46">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sww-Yl-F46" id="ODM-5X-dyX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Plumbing Tools" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DCo-wh-opU">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="bbS-J1-uCj" kind="show" identifier="plumbingTools" id="cbG-CT-w2c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="6aR-Nj-WH3" style="IBUITableViewCellStyleDefault" id="9qo-bx-38Z">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9qo-bx-38Z" id="LZe-Rq-uwp">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Copper Pipes and Fittings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6aR-Nj-WH3">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JYN-dU-urW" kind="show" identifier="copperPipesAndFittings" id="2Gh-fI-Ugr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="F1J-Yr-jRz" id="Vj3-Kf-vEp"/>
+                            <outlet property="delegate" destination="F1J-Yr-jRz" id="ocg-IZ-ect"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xy1-Kz-3pf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neM-VT-uNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="1134"/>
+        </scene>
+        <!--Plumbing Supply Inventory Table View Controller-->
+        <scene sceneID="Saw-IU-GMv">
+            <objects>
+                <tableViewController id="bbS-J1-uCj" customClass="PlumbingSupplyInventoryTableViewController" customModule="Basic_Swift_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="urs-Qy-lHM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="Eel-pI-Mgl" style="IBUITableViewCellStyleDefault" id="Hwm-fl-6bR">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hwm-fl-6bR" id="5Az-Mq-JWJ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eel-pI-Mgl">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="MlJ-1e-WHy" kind="show" id="m6l-Vf-Z7b"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bbS-J1-uCj" id="dzf-Cc-1VE"/>
+                            <outlet property="delegate" destination="bbS-J1-uCj" id="nTv-fV-bPX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoD-cN-Y24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="818"/>
+        </scene>
+        <!--Plumbing Supply Inventory Table View Controller-->
+        <scene sceneID="cCA-Ks-RF5">
+            <objects>
+                <tableViewController id="JYN-dU-urW" customClass="PlumbingSupplyInventoryTableViewController" customModule="Basic_Swift_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uND-Qh-wsw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="J1z-2s-QMr" style="IBUITableViewCellStyleDefault" id="Cnm-QQ-kQP">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cnm-QQ-kQP" id="y3C-Wk-PZZ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J1z-2s-QMr">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="MlJ-1e-WHy" kind="show" id="Cjo-8R-bP9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JYN-dU-urW" id="cKw-kQ-806"/>
+                            <outlet property="delegate" destination="JYN-dU-urW" id="fb6-PB-FI4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vp-qa-R2Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="1495"/>
+        </scene>
+        <!--Plumbing Supply Item Description View Controller-->
+        <scene sceneID="Ksq-Mp-MHt">
+            <objects>
+                <viewController id="MlJ-1e-WHy" customClass="PlumbingSupplyItemDescriptionViewController" customModule="Basic_Swift_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0RW-zq-vvp"/>
+                        <viewControllerLayoutGuide type="bottom" id="ieM-VP-oPx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DCL-DU-yut">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOT-Eq-xn7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Uyv-3s-JMD"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLo-a7-yiV">
+                                <rect key="frame" x="16" y="168" width="568" height="348"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QOT-Eq-xn7" firstAttribute="top" secondItem="DCL-DU-yut" secondAttribute="top" id="5nQ-5l-0QJ"/>
+                            <constraint firstItem="uLo-a7-yiV" firstAttribute="top" secondItem="QOT-Eq-xn7" secondAttribute="bottom" constant="8" id="F9q-oj-CZh"/>
+                            <constraint firstItem="uLo-a7-yiV" firstAttribute="leading" secondItem="DCL-DU-yut" secondAttribute="leading" constant="16" id="KBf-qS-kYf"/>
+                            <constraint firstAttribute="trailing" secondItem="uLo-a7-yiV" secondAttribute="trailing" constant="16" id="XQF-nT-An7"/>
+                            <constraint firstItem="ieM-VP-oPx" firstAttribute="top" secondItem="uLo-a7-yiV" secondAttribute="bottom" constant="20" id="hoa-lJ-9nC"/>
+                            <constraint firstItem="QOT-Eq-xn7" firstAttribute="leading" secondItem="DCL-DU-yut" secondAttribute="leading" id="ixC-QL-cPp"/>
+                            <constraint firstAttribute="trailing" secondItem="QOT-Eq-xn7" secondAttribute="trailing" id="nQb-hx-YsO"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="bsn_imageView" destination="QOT-Eq-xn7" id="jCy-uK-cmc"/>
+                        <outlet property="bsn_textView" destination="uLo-a7-yiV" id="7RY-u7-cUu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lxk-IU-Q0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3446" y="1168"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EZu-Lm-Iki">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oq4-PQ-Ffe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UHg-i5-KT7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F1J-Yr-jRz" kind="relationship" relationship="rootViewController" id="zIF-Kf-YJZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpC-4j-c7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="1134"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cjo-8R-bP9"/>
+    </inferredMetricsTieBreakers>
+</document>
